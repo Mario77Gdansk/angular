@@ -1,0 +1,63 @@
+html {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+main {
+     display: flex; /*dzięki temu wyświetla mi się obok siebie tekst w main */
+}
+
+
+
+
+#navigation {
+    background-color: rgb(212, 180, 110);
+    height: 120px;
+    display: flex;
+    align-items: center; /*ruch góra dół */
+    justify-content: center; /*ruch prawo lewo */
+
+
+}
+
+#navigation ul {
+    display: flex;
+    list-style: none;
+    /* flex-direction: column; */
+    padding: 0px;
+}
+#navigation ul li {
+padding-top: 12px;
+padding-bottom: 12px;
+padding-right: 12px;
+padding-left: 12px;
+/* padding: 12px 10px 12px 10px; skoro prawa i lewa oraz góra i dół są takie same to można napisać; */
+padding: 12px 12px; /*oczywiście ten wiersz nadpisze cztery pierwsze*/
+font-size: 22px;}
+
+.article::before {
+    content: 'pseudoelement'
+}
+
+/* ::before, ::after */
+
+#navigation ul li a {
+    text-decoration: none;
+    color: rgb(221, 173, 230);
+    background-color: brown;
+    padding: 8px;
+    border-radius: 4px;
+    transition: 1s all;
+}
+
+#navigation ul li a:hover {
+    background-color: cornsilk;
+}
+.article{
+    width: 33%;
+    border: 1px dashed royalblue;
+}
+
+.article h3{
+    text-align: center;
+}
+
