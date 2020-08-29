@@ -1,3 +1,16 @@
 .main-paragraph {
     color:rgb(153, 101, 142);
 }
+
+#block-element {
+    border: 5px solid darkblue;
+}
+
+#block-element p{
+    border: 10px solid darkgreen;
+}
+
+#block-element span{
+    border: 2px solid darkseagreen
+
+}
