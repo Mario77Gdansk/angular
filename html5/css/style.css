@@ -34,11 +34,9 @@ padding-left: 12px;
 padding: 12px 12px; /*oczywiście ten wiersz nadpisze cztery pierwsze*/
 font-size: 22px;}
 
-.article::before {
-    content: 'pseudoelement'
-}
 
-/* ::before, ::after */
+
+
 
 #navigation ul li a {
     text-decoration: none;
@@ -52,10 +50,36 @@ font-size: 22px;}
 #navigation ul li a:hover {
     background-color: cornsilk;
 }
+
 .article{
     width: 33%;
     border: 1px dashed royalblue;
+    position: relative;
 }
+
+.article::before {
+    content: 'to jest mój tooltip';
+    position: absolute;
+    visibility: hidden;
+    
+    background-color: seagreen;
+    color: whitesmoke;
+    padding: 4px 8px;
+    border-radius: 4px;
+    z-index: 1;
+
+
+
+
+}
+
+/* ::before, ::after */
+
+.article:hover:before {
+    visibility: visible;
+}
+
+
 
 .article h3{
     text-align: center;
