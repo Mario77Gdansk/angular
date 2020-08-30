@@ -5,7 +5,9 @@ html {
 
 main {
      display: flex; /*dzięki temu wyświetla mi się obok siebie tekst w main */
-}
+     margin-top:150px;
+     flex-direction: column;
+    }
 
 
 
@@ -17,6 +19,13 @@ main {
     flex-direction: row;
     align-items: center; /*ruch góra dół */
     justify-content: center; /*ruch prawo lewo */
+   
+    position: fixed;
+    width:100%;
+    z-index: 1;
+    top:0;
+    padding:20px 10px;
+    transition: .5s all;
 }
 
 #navigation ul {
@@ -129,6 +138,13 @@ font-size: 22px;}
         width: 99vw; 
     }
 }
+
+#todoTasks{
+    font-size: 20px;
+    list-style: decimal;
+    padding: 40px;
+}
+
 
 
 
