@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MyFirstComponentComponent implements OnInit {
 
+  myName: string = 'My name is Mariusz'
+  basicArray: string[] = ['one','two','three']
+  isVisible: boolean = false
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onButtonClick() {
+    this.isVisible = !this.isVisible
+    console.log(this.isVisible)
+   // alert('Siema użytkowniku')
   }
 
 }
