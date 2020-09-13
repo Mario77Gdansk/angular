@@ -1,0 +1,32 @@
+<nav class="nav" [ngClass]="{'nav--hidden': isOpen}">
+
+    <button (click)="onButtonClick()">Click Me!</button><ul class="nav__list">
+    <!--tu wpisałem kod do wyświetlenia buttona
+    na nim ma się wyświetlić napis Click Me!
+    (click) to jest .................
+    "onButtonClick() to jest ...................
+    -->   
+        <li class="nav__item">
+            <a class="nav__link" routerLink="/">Dashboard</a>
+        </li>
+        <li class="nav__item">
+            <a class="nav__link" routerLink="/todo">Todo</a>
+        </li>
+    </ul>
+     
+
+
+
+    <!-- <ol>
+        <li>
+            <a routerLink="/">Dashboard</a>
+        </li>
+        <li>
+            <a routerLink="/todo">Todo</a>
+        </li>
+    </ol> -->
+
+</nav>
+
+
+

@@ -1,0 +1,10 @@
+app-routing.module
+to mi nie działa i nie wiem dlaczego
+
+
+const routes: Routes = [];
+{path: component: DashboardComponent}
+{path: component: TodoComponent}
+
+tu usunąłem apostrofu po dwukropku w path tera nie jest na czerwono ale i tak nie działa
+to jest oczywiście z app-routing.,module
